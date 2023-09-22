@@ -1,10 +1,11 @@
-// convert input to integer
-let studentMarks = parseInt(prompt("enter student marks"));
+const displayGrade = () => {
+  // convert input to integer
+  let studentMarks = parseInt(prompt("enter student marks"));
 
-const displayGrade = (studentMarks) => {
   // checking studentMarks within 0 and 100 range
   if (studentMarks >= 0 && studentMarks <= 100) {
-    // output grade based on specified condition
+    // assigning grade according to the given criteria
+
     if (studentMarks > 79) {
       console.log("A");
     } else if (studentMarks >= 60 && studentMarks <= 79) {
@@ -23,4 +24,4 @@ const displayGrade = (studentMarks) => {
 };
 
 // invoke
-displayGrade(studentMarks);
+displayGrade();

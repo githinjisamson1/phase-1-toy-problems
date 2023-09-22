@@ -4,8 +4,8 @@ let demeritPoints = 0;
 // convert input to integer
 let speedOfCar = parseInt(prompt("enter speed of car"));
 
-const displayDemeritPoints = (speedOfCar) => {
-  if (speedOfCar < speedLimit) {
+const detectSpeed = (speedOfCar) => {
+  if (speedOfCar <= speedLimit) {
     // speed within range
     console.log("OK");
   } else {
@@ -18,13 +18,12 @@ const displayDemeritPoints = (speedOfCar) => {
     // demeritPoints = demeritPoints + points
     demeritPoints += points;
 
-    console.log(`Total number of demerit points: ${Math.trunc(demeritPoints)}`);
-
     if (demeritPoints > 12) {
       console.log("license suspended");
     }
+    console.log(`Total number of demerit points: ${Math.trunc(demeritPoints)}`);
   }
 };
 
 // invoke
-displayDemeritPoints(speedOfCar);
+detectSpeed(speedOfCar);

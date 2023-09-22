@@ -44,3 +44,7 @@ Navigate to the project directory: `cd phase-1-week-1-toy-problems`
 ## Usage
 
 Call the main function for each solution in each specific file
+
+## Author
+
+This code challenge is authored by Samson Githinji

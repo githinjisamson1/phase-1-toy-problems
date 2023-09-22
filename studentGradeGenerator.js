@@ -1,8 +1,8 @@
-// convert user input to an integer
+// convert input to integer
 let studentMarks = parseInt(prompt("enter student marks"));
 
 const displayGrade = (studentMarks) => {
-  // checking if studentMarks is within 0 and 100 range
+  // checking studentMarks within 0 and 100 range
   if (studentMarks >= 0 && studentMarks <= 100) {
     // output grade based on specified condition
     if (studentMarks > 79) {
@@ -17,9 +17,10 @@ const displayGrade = (studentMarks) => {
       console.log("E");
     }
   } else {
-    // studentMarks is not within 0 and 100 range
+    // studentMarks not within range
     console.log("input should be between 0 and 100");
   }
 };
 
+// invoke
 displayGrade(studentMarks);

@@ -10,7 +10,7 @@ const displayGrade = () => {
       console.log("A");
     } else if (studentMarks >= 60 && studentMarks <= 79) {
       console.log("B");
-    } else if (studentMarks > 49 && studentMarks <= 59) {
+    } else if (studentMarks >= 50 && studentMarks <= 59) {
       console.log("C");
     } else if (studentMarks >= 40 && studentMarks <= 49) {
       console.log("D");
